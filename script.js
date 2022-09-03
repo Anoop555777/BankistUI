@@ -184,7 +184,7 @@ const observerCallbackSection = function (enteries, observer) {
   const [entry] = enteries;
 
   if (!entry.isIntersecting) return;
-  // entry.target.classList.remove('section--hidden');
+  entry.target.classList.remove('section--hidden');
 
   observer.unobserve(entry.target);
 };
